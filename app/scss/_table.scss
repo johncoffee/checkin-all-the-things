@@ -1,0 +1,16 @@
+@import "../bower_components/foundation-sites/scss/components/table";
+
+.standard-table {
+  @include table(even); // use table - not foundation-table
+  @include table-hover();
+}
+
+.standard-table__sort {
+
+}
+
+.standard-table--stack {
+  @include breakpoint(medium down) {
+    @include table-stack(false);
+  }
+}
